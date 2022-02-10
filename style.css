@@ -1,0 +1,150 @@
+@import './css/imports.css';
+
+/* -------- Header -------- */
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--light-black-1);
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: var(--font-cookie);
+}
+
+.logo-down {
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: var(--default-transition);
+    font-family: var(--font-redressed);
+}
+
+.navbar-left:hover > .logo-down {
+    transform: scaleY(1);
+}
+
+.navbar-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--black-color);
+}
+
+.search-bar {
+    width: 20rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.625rem;
+    border: none;
+    outline: none;
+}
+
+.search-bar::-webkit-search-cancel-button {
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.search-bar::-webkit-search-cancel-button:hover {
+    transform: scale(1.1);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.icon-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+.icon-btn > i {
+    font-size: 1.5rem;
+}
+
+/* Display */
+.display {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.top-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 8rem;
+}
+
+/* Main */
+.quiz-arena {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.category {
+    flex: 1;
+    border-bottom: 1px solid var(--light-black-3);
+    text-align: center;
+    padding: 0.25rem 0;
+    transition: var(--default-transition);
+}
+
+.active-category,
+.category:hover {
+    border-bottom: 1px solid var(--black-color);
+}
+
+.category-quizes {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.web-category,
+.movie-category {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: var(--black-color);
+    color: var(--white-color);
+    margin-top: 3rem;
+}

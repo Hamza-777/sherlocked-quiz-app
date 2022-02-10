@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    border: 1px solid var(--light-black-1);
+    box-shadow: var(--light-black-4) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-overlay {
+    width: 19rem;
+    height: 27rem;
+}
+
+.card-overlay > img {
+    object-fit: fill;
+    object-position: 0 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--light-black-9);
+    z-index: 1;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: var(--default-transition);
+}
+
+.card-overlay:hover > .overlay {
+    transform: scaleY(1);
+}
+
+.overlay > .h4 {
+    font-family: var(--font-architects-daughter);
+}
+
+.overlay > .h4,
+.overlay > .btn {
+    color: var(--white-color);
+}
+
+.overlay > .btn {
+    background: var(--light-black-8);
+    padding: 0.75rem 1rem;
+}
+
+.overlay > .btn:hover {
+    background: var(--black-color);
+}
