@@ -29,7 +29,7 @@
     font-family: var(--font-redressed);
 }
 
-.navbar-left:hover > .logo-down {
+.navbar:hover > .navbar-left > .logo-down {
     transform: scaleY(1);
 }
 
@@ -75,6 +75,11 @@
 
 .icon-btn > i {
     font-size: 1.5rem;
+    transition: var(--default-transition);
+}
+
+.icon-btn:hover > i {
+    transform: scale(1.1);
 }
 
 /* Display */
@@ -114,15 +119,20 @@
 
 .category {
     flex: 1;
-    border-bottom: 1px solid var(--light-black-3);
     text-align: center;
     padding: 0.25rem 0;
     transition: var(--default-transition);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--light-black-3);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .active-category,
 .category:hover {
-    border-bottom: 1px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
 }
 
 .category-quizes {
@@ -133,6 +143,7 @@
     justify-content: center;
     gap: 2rem;
     padding: 1rem 2rem;
+    transition: var(--default-transition);
 }
 
 .web-category,
