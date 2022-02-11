@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sherlocked</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" class="h1 logo">Sherlocked</a>
+                <p class="small logo-down">THE GAME IS ON</p>
+            </div>
+            <div class="navbar-mid">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for a quiz...." class="search-bar">
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="btn icon-btn">
+                    <i class="fas fa-heart"></i>
+                    <span class="small">Favourites</span>
+                </a>
+                <a href="#" class="btn icon-btn">
+                    <i class="fa-brands fa-wpexplorer"></i>
+                    <span class="small">Explore</span>
+                </a>
+                <a href="#" class="btn icon-btn">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="small">Account</span>
+                </a>
+            </div>
+        </nav>
+        <section class="display">
+            <img src="./images/I-AM-SHERLOCKED.png" alt="Sherlocked">
+            <div class="top-img">
+                <img src="./images/sherlock.jpg" alt="The Game Is On">
+            </div>
+        </section>
+    </header>
+    <main class="quiz-arena">
+        <h1 class="h2 title">Categories</h1>
+        <div class="categories">
+            <button class="h3 category anime-btn active-category">Anime</button>
+            <button class="h3 category web-btn">Web/TV Series</button>
+            <button class="h3 category movie-btn">Movies</button>
+        </div>
+        <div class="category-quizes anime-category">
+            <div class="card card-overlay">
+                <img src="./images/aot.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Attack on Titans</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/narutoshippuden.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Naruto Shippuden</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/bleach.png" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Bleach</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+        </div>
+        <div class="category-quizes web-category">
+            <div class="card card-overlay">
+                <img src="./images/got.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Game Of Thrones</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/strangerthings.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Stranger Things</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/witcher.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">The Witcher</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+        </div>
+        <div class="category-quizes movie-category">
+            <div class="card card-overlay">
+                <img src="./images/inception.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">Inception</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/darkknight.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">The Dark Knight</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+            <div class="card card-overlay">
+                <img src="./images/shawshankredemption.jpg" alt="quiz">
+                <div class="overlay">
+                    <p class="h4">The Shawshank Redemption</p>
+                    <a href="#" class="btn h5">Take Quiz</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="h5">&copy; 2022 Sherlocked</p>
+    </footer>
 </body>
+<script src="app.js"></script>
 </html>
