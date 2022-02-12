@@ -23,6 +23,8 @@
     --light-color: #EEEEEE;
     --badge-color: #FF5722;
     --starred-color: #FFC900;
+    --green-color: #0a6d0a;
+    --red-color: #ff0000;
     --black-color: #000;
     --grey-1-color: #111;
     --grey-2-color: #222;
@@ -125,6 +127,24 @@ a {
     font-size: 1rem;
 }
 
+.animated-btn {
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background:
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 100% 0;
+    background-size: 20px 3px, 3px 20px;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.animated-btn:hover {
+    background-position: 100% 100%, 0 0, 0 0, 100% 100%;
+}
+
 .small {
     font-size: 0.875rem;
     font-weight: 600;
@@ -149,6 +169,12 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0.2rem;
+}
+
+.hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--grey-7-color);
 }
 
 /* Scrollbar */
