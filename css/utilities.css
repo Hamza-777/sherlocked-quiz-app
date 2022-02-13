@@ -58,6 +58,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-ubuntu);
+    color: var(--grey-4-color);
 }
 
 html {
@@ -78,7 +79,7 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--grey-4-color);
 }
 
 /* Normal Headings */
@@ -116,6 +117,10 @@ a {
     font-size: 1rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
+}
+
+.title {
+    border-bottom: 2px solid var(--grey-4-color);
 }
 
 .btn {
@@ -175,6 +180,31 @@ a {
     width: 100%;
     border: none;
     border-top: 2px solid var(--grey-7-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-flow: row wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-align-justify-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
 }
 
 /* Scrollbar */
