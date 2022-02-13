@@ -23,6 +23,8 @@
     --light-color: #EEEEEE;
     --badge-color: #FF5722;
     --starred-color: #FFC900;
+    --green-color: #0a6d0a;
+    --red-color: #ff0000;
     --black-color: #000;
     --grey-1-color: #111;
     --grey-2-color: #222;
@@ -56,6 +58,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-ubuntu);
+    color: var(--grey-4-color);
 }
 
 html {
@@ -76,7 +79,7 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--grey-4-color);
 }
 
 /* Normal Headings */
@@ -116,6 +119,10 @@ a {
     margin-bottom: 0.5rem;
 }
 
+.title {
+    border-bottom: 2px solid var(--grey-4-color);
+}
+
 .btn {
     position: relative;
     cursor: pointer;
@@ -123,6 +130,24 @@ a {
     border: none;
     background: transparent;
     font-size: 1rem;
+}
+
+.animated-btn {
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background:
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 100% 0;
+    background-size: 20px 3px, 3px 20px;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.animated-btn:hover {
+    background-position: 100% 100%, 0 0, 0 0, 100% 100%;
 }
 
 .small {
@@ -149,6 +174,37 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0.2rem;
+}
+
+.hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--grey-7-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-flow: row wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-align-justify-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
 }
 
 /* Scrollbar */
