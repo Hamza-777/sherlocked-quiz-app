@@ -141,6 +141,10 @@
     gap: 2rem;
 }
 
+.instructions-page > .buttons {
+    margin-left: 0;
+}
+
 .instruction {
     gap: 1rem;
     font-weight: 600;
